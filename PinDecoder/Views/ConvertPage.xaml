@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PinDecoder.Views.ConvertPage"  xmlns:vm="clr-namespace:PinDecoder.ViewModels" Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:ConvertViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Clear" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+        <ScrollView >
+            <ScrollView.BindingContext>
+                <vm:ConvertViewModel />
+            </ScrollView.BindingContext>
+            <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand" HorizontalOptions="Center" Padding="16,16,16,16" Margin="0" Spacing="1.0">                
+                <Label  Padding="0" Margin="0" VerticalOptions="Start" HorizontalOptions="Center" >                   
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Click on each pin that is present"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+                <Grid x:Name="ButtonGrid" HorizontalOptions="Center" Margin="0" Padding="0" VerticalOptions="StartAndExpand" >                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                   
+                    <BoxView x:Name="B11"
+                             Grid.Row="1"
+                             Grid.Column="1"
+                             Color="Black">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Orientation_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView x:Name="B12"
+                             Grid.Row="1"
+                             Grid.Column="2"
+                             Color="AntiqueWhite" />
+                    <BoxView x:Name="B13"
+                             Grid.Row="1"
+                             Grid.Column="3"
+                             Color="Red" />
+                    <BoxView x:Name="B14"
+                             Grid.Row="1"
+                             Grid.Column="4"
+                             Color="AntiqueWhite" />
+                    <BoxView x:Name="B15"
+                             Grid.Row="1"
+                             Grid.Column="5"
+                             Color="AntiqueWhite" />
+
+                    <BoxView x:Name="B21"
+                             Grid.Row="2"
+                             Grid.Column="1"
+                             Color="AntiqueWhite"/>
+                    <BoxView x:Name="B22"
+                             Grid.Row="2"
+                             Grid.Column="2"
+                             Color="Red" />
+                    <BoxView x:Name="B23"
+                             Grid.Row="2"
+                             Grid.Column="3"
+                             Color="AntiqueWhite" />
+                    <BoxView x:Name="B24"
+                             Grid.Row="2"
+                             Grid.Column="4"
+                             Color="Red" />
+                    <BoxView x:Name="B25"
+                             Grid.Row="2"
+                             Grid.Column="5"
+                             Color="AntiqueWhite" />
+
+                    <BoxView x:Name="B31"
+                             Grid.Row="3"
+                             Grid.Column="1"
+                             Color="Red"/>
+                    <BoxView x:Name="B32"
+                             Grid.Row="3"
+                             Grid.Column="2"
+                             Color="AntiqueWhite" />
+                    <BoxView x:Name="B33"
+                             Grid.Row="3"
+                             Grid.Column="3"
+                             Color="SlateGray">
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Center_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
+                    <BoxView x:Name="B34"
+                             Grid.Row="3"
+                             Grid.Column="4"
+                             Color="AntiqueWhite" />
+                    <BoxView x:Name="B35"
+                             Grid.Row="3"
+                             Grid.Column="5"
+                             Color="Red" />
+
+                    <BoxView x:Name="B41"
+                             Grid.Row="4"
+                             Grid.Column="1"
+                             Color="AntiqueWhite"/>
+                    <BoxView x:Name="B42"
+                             Grid.Row="4"
+                             Grid.Column="2"
+                             Color="Red" />
+                    <BoxView x:Name="B43"
+                             Grid.Row="4"
+                             Grid.Column="3"
+                             Color="AntiqueWhite" />
+                    <BoxView x:Name="B44"
+                             Grid.Row="4"
+                             Grid.Column="4"
+                             Color="Red" />
+                    <BoxView x:Name="B45"
+                             Grid.Row="4"
+                             Grid.Column="5"
+                             Color="AntiqueWhite" />
+
+                    <BoxView x:Name="B51"
+                             Grid.Row="5"
+                             Grid.Column="1"
+                             Color="AntiqueWhite"/>
+                    <BoxView x:Name="B52"
+                             Grid.Row="5"
+                             Grid.Column="2"
+                             Color="AntiqueWhite" />
+                    <BoxView x:Name="B53"
+                             Grid.Row="5"
+                             Grid.Column="3"
+                             Color="Red"/>
+                    <BoxView x:Name="B54"
+                             Grid.Row="5"
+                             Grid.Column="4"
+                             Color="AntiqueWhite" />
+                    <BoxView x:Name="B55"
+                             Grid.Row="5"
+                             Grid.Column="5"
+                             Color="AntiqueWhite" />
+                </Grid>
+                <Label  Padding="0" Margin="20" VerticalOptions="Start" HorizontalOptions="Center" >                   
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span x:Name="Result" Text="Result = "/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+</ContentPage>

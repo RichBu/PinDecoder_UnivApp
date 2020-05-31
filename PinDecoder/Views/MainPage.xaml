@@ -11,9 +11,9 @@
                 </OnPlatform>
             </NavigationPage.Icon>
         </NavigationPage>
-        <NavigationPage Title="Read">
+        <NavigationPage Title="Convert">
             <x:Arguments>
-                <views:AboutPage />
+                <views:ConvertPage />
             </x:Arguments>
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
