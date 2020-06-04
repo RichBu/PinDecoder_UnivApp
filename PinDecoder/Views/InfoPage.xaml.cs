@@ -11,5 +11,10 @@ namespace PinDecoder.Views
         {
             InitializeComponent();
         }
+
+        async void PictButton_Clicked()
+        {
+            await Navigation.PushModalAsync(new NavigationPage(new PicturePage()));
+        }
     }
 }

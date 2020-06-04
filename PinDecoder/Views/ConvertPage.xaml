@@ -4,7 +4,7 @@
         <vm:ConvertViewModel />
     </ContentPage.BindingContext>
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Clear" />
+        <ToolbarItem Text="Clear" Clicked="Clear_Clicked"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -44,119 +44,227 @@
                     </Grid.ColumnDefinitions>
                    
                     <BoxView x:Name="B11"
+                             ClassId="B11"
                              Grid.Row="1"
                              Grid.Column="1"
-                             Color="Black">
+                             Color="white"
+                             >
                         <BoxView.GestureRecognizers>
                             <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Orientation_Clicked">
                             </TapGestureRecognizer>
                         </BoxView.GestureRecognizers>
                     </BoxView>
                     <BoxView x:Name="B12"
+                             ClassId="B12"
                              Grid.Row="1"
                              Grid.Column="2"
-                             Color="AntiqueWhite" />
+                             Color="white"
+                             >
+                    </BoxView>
                     <BoxView x:Name="B13"
+                             ClassId="B13"
                              Grid.Row="1"
                              Grid.Column="3"
-                             Color="Red" />
+                             Color="white"
+                             >
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Pin_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
                     <BoxView x:Name="B14"
+                             ClassId="B14"
                              Grid.Row="1"
                              Grid.Column="4"
-                             Color="AntiqueWhite" />
+                             Color="white"
+                             >
+                    </BoxView>
                     <BoxView x:Name="B15"
+                             ClassId="B15"
                              Grid.Row="1"
                              Grid.Column="5"
-                             Color="AntiqueWhite" />
-
+                             Color="white"
+                             >
+                    </BoxView>
                     <BoxView x:Name="B21"
+                             ClassId="B21"
                              Grid.Row="2"
                              Grid.Column="1"
-                             Color="AntiqueWhite"/>
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView>
                     <BoxView x:Name="B22"
+                             ClassId="B22"
                              Grid.Row="2"
                              Grid.Column="2"
-                             Color="Red" />
+                             Color="Red"
+                             >
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Pin_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
                     <BoxView x:Name="B23"
+                             ClassId="B23"
                              Grid.Row="2"
                              Grid.Column="3"
-                             Color="AntiqueWhite" />
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView>
                     <BoxView x:Name="B24"
+                             ClassId="B24"
                              Grid.Row="2"
                              Grid.Column="4"
-                             Color="Red" />
+                             Color="Red"
+                             >
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Pin_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
                     <BoxView x:Name="B25"
+                             ClassId="B25"
                              Grid.Row="2"
                              Grid.Column="5"
-                             Color="AntiqueWhite" />
+                             Color="AntiqueWhite"
+                             >
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Pin_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
 
                     <BoxView x:Name="B31"
+                             ClassId="B31"
                              Grid.Row="3"
                              Grid.Column="1"
-                             Color="Red"/>
+                             Color="Red"
+                             >
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Pin_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
                     <BoxView x:Name="B32"
+                             ClassId="B32"
                              Grid.Row="3"
                              Grid.Column="2"
-                             Color="AntiqueWhite" />
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView>
                     <BoxView x:Name="B33"
+                             ClassId="B33"
                              Grid.Row="3"
                              Grid.Column="3"
-                             Color="SlateGray">
+                             Color="SlateGray"
+                             >
                         <BoxView.GestureRecognizers>
                             <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Center_Clicked">
                             </TapGestureRecognizer>
                         </BoxView.GestureRecognizers>
                     </BoxView>
                     <BoxView x:Name="B34"
+                             ClassId="B34"
                              Grid.Row="3"
                              Grid.Column="4"
-                             Color="AntiqueWhite" />
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView> 
                     <BoxView x:Name="B35"
+                             ClassId="B35"
                              Grid.Row="3"
                              Grid.Column="5"
-                             Color="Red" />
+                             Color="Red"
+                             >
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Pin_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
 
                     <BoxView x:Name="B41"
+                             ClassId="B41"
                              Grid.Row="4"
                              Grid.Column="1"
-                             Color="AntiqueWhite"/>
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView>
                     <BoxView x:Name="B42"
+                             ClassId="B42"
                              Grid.Row="4"
                              Grid.Column="2"
-                             Color="Red" />
+                             Color="Red"
+                             >
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Pin_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView> 
                     <BoxView x:Name="B43"
+                             ClassId="B43"
                              Grid.Row="4"
                              Grid.Column="3"
-                             Color="AntiqueWhite" />
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView> 
                     <BoxView x:Name="B44"
+                             ClassId="B44"
                              Grid.Row="4"
                              Grid.Column="4"
-                             Color="Red" />
+                             Color="Red"
+                             >
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Pin_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
                     <BoxView x:Name="B45"
+                             ClassId="B45"
                              Grid.Row="4"
                              Grid.Column="5"
-                             Color="AntiqueWhite" />
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView>
 
                     <BoxView x:Name="B51"
+                             ClassId="B51"
                              Grid.Row="5"
                              Grid.Column="1"
-                             Color="AntiqueWhite"/>
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView>
                     <BoxView x:Name="B52"
+                             ClassId="B52"
                              Grid.Row="5"
                              Grid.Column="2"
-                             Color="AntiqueWhite" />
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView>
                     <BoxView x:Name="B53"
+                             ClassId="B53"
                              Grid.Row="5"
                              Grid.Column="3"
-                             Color="Red"/>
+                             Color="Red"
+                             >
+                        <BoxView.GestureRecognizers>
+                            <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Pin_Clicked">
+                            </TapGestureRecognizer>
+                        </BoxView.GestureRecognizers>
+                    </BoxView>
                     <BoxView x:Name="B54"
+                             ClassId="B54"
                              Grid.Row="5"
                              Grid.Column="4"
-                             Color="AntiqueWhite" />
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView>
                     <BoxView x:Name="B55"
+                             ClassId="B55"
                              Grid.Row="5"
                              Grid.Column="5"
-                             Color="AntiqueWhite" />
+                             Color="AntiqueWhite"
+                             >
+                    </BoxView> 
                 </Grid>
                 <Label  Padding="0" Margin="20" VerticalOptions="Start" HorizontalOptions="Center" >                   
                     <Label.FormattedText>
