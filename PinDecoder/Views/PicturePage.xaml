@@ -25,7 +25,10 @@
                         </FormattedString>
                     </Label.FormattedText>                                    
                 </Label>
-                <Image Source="PinDecode_Pic_01.png" VerticalOptions="Center" />
+                <ContentView Padding="0,40,0,40" HorizontalOptions="FillAndExpand">
+                   <Image Source="PinDecode_Pic_01.png" VerticalOptions="FillAndExpand" HeightRequest="200" />
+                </ContentView>
+
             </StackLayout>
         </ScrollView>
 </ContentPage>
