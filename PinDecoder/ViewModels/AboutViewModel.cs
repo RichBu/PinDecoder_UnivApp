@@ -10,7 +10,7 @@ namespace PinDecoder.ViewModels
         public AboutViewModel()
         {
             Title = "About";
-            OpenWebCommand = new Command(async () => await Browser.OpenAsync("http://www.redblup.com"));
+            OpenWebCommand = new Command(async () => await Browser.OpenAsync("http://redblup.com"));
         }
 
         public ICommand OpenWebCommand { get; }
